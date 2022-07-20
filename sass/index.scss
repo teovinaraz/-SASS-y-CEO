@@ -1,0 +1,115 @@
+@import "variables" ;
+
+
+
+
+h1 {
+    color: rgb(65, 52, 47);
+    font-size: 20px;
+    background-color: $bglight;
+
+    span {
+        color: olive;
+    }    
+}
+
+.block {
+    background-color: $bglight;
+    padding: 20px 0;
+
+    &__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: $mediumsize;
+    }
+}
+
+.btn-base {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: $mediumsize;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+
+//extend
+.btn-contact {
+    @extend .btn-base;
+    background-color: rgb(121, 121, 161);
+}
+
+.btn-info {
+    @extend .btn-base;
+    background-color: rgb(82, 88, 72);
+}
+
+
+//mixin
+@mixin basecard($aling, $background, $width) {
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-top: 20px;
+    display: flex;
+    justify-content: $aling;
+    background-color: $background;
+
+    //if
+
+    @if ($width == 'sm') {
+        max-width: 50%;
+    } @else if ($width == 'md') {
+        max-width: 80%;
+    } @else {
+        max-width: 100%;
+    }
+
+}
+
+.card-1 {
+    @include basecard(space-between, violet, 'sm');
+}
+
+.card-2 {
+    @include basecard (space-around, lightblue, 'md');
+}
+
+.card-3 {
+    @include basecard (space-evenly, orange, '');
+}
+
+
+footer {
+    margin-top: 50px;
+}
+//maps
+$socialmedia: (
+
+    //llave: valor
+
+    github: #1d1d1d,
+    twitter: #55acee,
+    instagram: #c92d8f,
+    facebook: #2279e4,
+);
+
+//Bucle each
+
+@each $name, $colour in $socialmedia {
+
+    .link-#{$name} {
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(250, 246, 246);
+        text-decoration: none;
+        background-color: $colour;
+    }
+    
+}

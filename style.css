@@ -1,0 +1,91 @@
+h1 {
+  color: #41342f;
+  font-size: 20px;
+  background-color: #f4f5bb; }
+  h1 span {
+    color: olive; }
+
+.block {
+  background-color: #f4f5bb;
+  padding: 20px 0; }
+  .block__title {
+    font-size: 30px;
+    text-align: center; }
+  .block__text {
+    font-size: 22px; }
+
+.btn-base, .btn-contact, .btn-info {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  color: white;
+  font-weight: bold; }
+
+.btn-contact {
+  background-color: #7979a1; }
+
+.btn-info {
+  background-color: #525848; }
+
+.card-1 {
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: violet;
+  max-width: 50%; }
+
+.card-2 {
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  max-width: 80%; }
+
+.card-3 {
+  border-radius: 10px;
+  border: 2px solid #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: orange;
+  max-width: 100%; }
+
+footer {
+  margin-top: 50px; }
+
+.link-github {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #faf6f6;
+  text-decoration: none;
+  background-color: #1d1d1d; }
+
+.link-twitter {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #faf6f6;
+  text-decoration: none;
+  background-color: #55acee; }
+
+.link-instagram {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #faf6f6;
+  text-decoration: none;
+  background-color: #c92d8f; }
+
+.link-facebook {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #faf6f6;
+  text-decoration: none;
+  background-color: #2279e4; }
